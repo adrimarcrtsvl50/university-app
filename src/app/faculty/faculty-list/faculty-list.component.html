@@ -1,0 +1,31 @@
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Facultades</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FACULTAD</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let facultad of facultades' class="text-center">
+                        <td>{{facultad.id}}</td>
+                        <td>{{facultad.name}}</td>
+                        <td>
+                            <button (click)="Editar(facultad)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(facultad)" class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

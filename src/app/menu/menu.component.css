@@ -1,0 +1,18 @@
+.menu_container {
+    background-color: #880000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_container a {
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.menu_container a:hover{
+    background-color: #780000;
+}
